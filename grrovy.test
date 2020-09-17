@@ -1,0 +1,11 @@
+pipeline {
+
+  parameters {
+      choice(name: "env", choice: "qa\nprod")
+  }
+  
+  stages {
+    echo "Hello world"
+  }
+
+}
