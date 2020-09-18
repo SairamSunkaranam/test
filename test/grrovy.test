@@ -1,1 +1,16 @@
+ pipeline {
+
+  agent any
+  parameters {
+      choice(name: "env", choices: "qa\nprod")
+  }
   
+  stages {
+    stage ('test'){
+       steps {
+         echo "Hello world"
+       }
+    }
+  }
+
+}
