@@ -2,7 +2,7 @@ pipeline {
 
   agent any
   parameters {
-      choice(name: "env", choice: "qa\nprod")
+      choice(name: "env", choices: "qa\nprod")
   }
   
   stages {
