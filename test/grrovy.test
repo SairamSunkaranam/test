@@ -2,14 +2,14 @@
 
   agent any
   parameters {
-      choice(name: "env", choices: "qa\nprod")
+      choice(name: "env1", choices: "qa\nprod")
   }
   
   stages {
     stage ('test'){
        steps {
          echo "Hello world"
-         echo "$env/${env}"
+         echo "$env1/${env1}"
        }
     }
   }
