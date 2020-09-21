@@ -9,7 +9,7 @@
     stage ('test'){
        steps {
          echo "Hello world"
-         echo "${env}/${env}"
+         echo "$env/${env}"
        }
     }
   }
