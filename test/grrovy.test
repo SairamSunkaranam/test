@@ -16,7 +16,7 @@
            }
          }
          
-         echo QA_BUCKET"/${env1}"
+         echo "$QA_BUCKET/${env1}"
        }
     }
   }
