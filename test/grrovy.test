@@ -10,8 +10,10 @@
        steps {
          echo "Hello world"
          echo "$env1/${env1}"
-         if ("$env1" == "qa" ) {
-            QA_BUCKET = "test-value1"
+         script {
+           if ("$env1" == "qa" ) {
+             QA_BUCKET = "test-value1"
+           }
          }
          
          echo $QA_BUCKET
