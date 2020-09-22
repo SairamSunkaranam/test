@@ -9,7 +9,7 @@
     stage ('test'){
        steps {
        
-         sh """
+         script {
              echo "Hello world"
              echo "$env1/${env1}"
          
@@ -20,7 +20,7 @@
          
              echo "${QA_BUCKET}/${env1}.tfstater"
              echo "${C3_PREFIX}/${env1}.tfstater"
-         """
+         }
        }
     }
   }
