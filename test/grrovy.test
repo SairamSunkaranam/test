@@ -13,10 +13,12 @@
          script {
            if ("$env1" == "qa" ) {
              QA_BUCKET = "test-value1"
+             C3_PREFIX = "my-provate-value"
            }
          }
          
-         echo "$QA_BUCKET/${env1}"
+         echo "$QA_BUCKET/${env1}.tfstater"
+         echo "$C3_PREFIX/${env1}.tfstater"
        }
     }
   }
