@@ -10,9 +10,9 @@
        steps {
          echo "Hello world"
          echo "$env1/${env1}"
-         if [ "$env1" == "qa" ]; then
+         if ("$env1" == "qa" ) {
             QA_BUCKET = "test-value1"
-         fi
+         }
          
          echo $QA_BUCKET
        }
