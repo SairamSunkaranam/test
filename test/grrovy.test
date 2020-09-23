@@ -21,7 +21,7 @@
              echo "${QA_BUCKET}/${env1}.tfstater"
              echo "${C3_PREFIX}/${env1}.tfstater"
              
-             echo $workspace
+             echo "${WORKSPACE}"
              
              "C:\\Users\\saira\\Downloads\\terraform_0.13.3_windows_amd64\\terraform" init
              
