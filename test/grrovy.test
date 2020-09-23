@@ -23,7 +23,7 @@
              
              echo "${WORKSPACE}"
              
-             ./terraform init
+             "${WORKSPACE}/test/terraform init"
              
          }
        }
