@@ -23,7 +23,7 @@
              
              echo "${WORKSPACE}"
              
-             "C:\\Users\\saira\\Downloads\\terraform_0.13.3_windows_amd64\\terraform" init
+             ./terraform init
              
          }
        }
