@@ -12,7 +12,7 @@
          script {
              echo "Hello world"
              echo "$env1/${env1}"
-             echo $env1
+             echo "$env1"
          
              if ("$env1" == "qa" ) {
                QA_BUCKET = "test-value1"
