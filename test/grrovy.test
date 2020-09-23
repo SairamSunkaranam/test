@@ -24,7 +24,7 @@
              echo "${WORKSPACE}"
              
              dir("test") {
-                ./terraform init
+                terraform
              }
              
          }
