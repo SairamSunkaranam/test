@@ -2,7 +2,7 @@
 
   agent any
   parameters {
-      choice(name: "env", choices: "qa\nprod")
+      choice(name: "env1", choices: "qa\nprod")
   }
   
   stages {
@@ -11,15 +11,16 @@
        
          script {
              echo "Hello world"
-             echo "$env/${env}"
+             echo "$env1/${env1}"
+             echo $env1
          
-             if ("$env" == "qa" ) {
+             if ("$env1" == "qa" ) {
                QA_BUCKET = "test-value1"
                C3_PREFIX = "my-provate-value"
              }      
          
-             echo "${QA_BUCKET}/${env}.tfstater"
-             echo "${C3_PREFIX}/${env}.tfstater"
+             echo "${QA_BUCKET}/${env1}.tfstater"
+             echo "${C3_PREFIX}/${env1}.tfstater"
              
              echo "${WORKSPACE}"
 
