@@ -23,7 +23,7 @@
              
              
              wget https://raw.githubusercontent.com/SairamSunkaranam/test/master/test/main.tf
-             "C:\Users\saira\Downloads\terraform_0.13.3_windows_amd64\terraform"
+             "C:\\Users\\saira\\Downloads\\terraform_0.13.3_windows_amd64\\terraform"
              
          }
        }
